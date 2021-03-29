@@ -1,7 +1,9 @@
 
 Call Your Loved Ones!
 
-This Chrome Extension is using 'Talking Alarm Clock' as a boilerplate. See below for more information.
+This Chrome Extension is created for personal learning purposes, and the idea is to create a reminder to call or text your loved ones!
+
+This Chrome Extension is built on top of 'Talking Alarm Clock' extionsion. See below for more information of the original code.
 
 Talking Alarm Clock:
 A clock with two configurable alarms that will play a sound and speak a phrase of your choice.
