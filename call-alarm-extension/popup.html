@@ -5,10 +5,10 @@
   <style>
     body {
       overflow: hidden;
-      margin-top: 0px;
+      margin: 0px;
     }
     #main {
-      width: 200px;
+      width: 250px;
       font-family: arial, helvetica, sans-serif;
       font-size: 13;
       background-color: #FFF1E6;
@@ -40,6 +40,11 @@
       font-size: 15;
       width: 85px;
       background-color: #EDDCD2;
+    }    
+    .alarm_wrap input[type=text] {
+      font-size: 15;
+      width: 85px;
+      background-color: #EDDCD2;
     }
     .alarm_wrap.disabled input {
       color: #999;
@@ -61,6 +66,7 @@
       margin-top: 10px;
     }
     .voice_options {
+      width: auto;
       background-color: #999;
     }
     #sound {
@@ -83,16 +89,28 @@
     #a1_tt {
       font-family: Nova Mono;
       height: 34px;
+      width: auto;
     }
     #a2_tt {
       font-family: Nova Mono;
       height: 34px;
+      width: auto;
     }
     #a1_ampm {
       font-family: Nova Mono;
     }
     #a2_ampm {
       font-family: Nova Mono;
+    }
+    #name_1 {
+      font-family: Nova Mono;
+      height: 34px;
+      width: auto;
+    }
+    #name_2 {
+      font-family: Nova Mono;
+      height: 34px;
+      width: auto;
     }
     #current_time {
       font-family: Nova Mono;
@@ -114,8 +132,8 @@
 <div id="main">
 
   <center>
-    <canvas id="clock" width="150" height="150"
-            role="button" tabindex="0"></canvas>
+    <!-- <canvas id="clock" width="150" height="150"
+            role="button" tabindex="0"></canvas> -->
     <div id="current_time">00:00:00</div>
   </center>
 
@@ -138,6 +156,10 @@
       <option>AM</option>
       <option selected>PM</option>
     </select>
+    <br>
+    <label for="name_2">Name 2</label>
+    <br>
+    <input id="name_2" type="text">
   </div>
 
   <div class="voice_options">
